@@ -8,10 +8,10 @@ public class Quiz01_1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        String [] names = new String[n+1];
+        String[] names = new String[n + 1];
 
-        names[0] = "hello ";
-        for (int i = 1; i < n+1; i++) {
+        names[0] = "Hello ";
+        for (int i = 1; i < n + 1; i++) {
             String input = sc.next();
 
             if (i == n) {
@@ -20,7 +20,7 @@ public class Quiz01_1 {
                 names[i] = input + ",";
             }
         }
-        for (String name : names){
+        for (String name : names) {
             System.out.print(name);
         }
     }
