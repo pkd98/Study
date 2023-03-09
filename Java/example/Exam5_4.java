@@ -9,7 +9,7 @@ public class Exam5_4 {
 
     public static double calcCircleArea(double radius) {
         // 소수 점 둘째 자리 반올림
-        return Math.round((3.14 * radius * radius) * 100) / 100.0;
+        return Math.round((Math.PI * Math.pow(radius, 2.0)) * 100) / 100.0;
     }
 
     public static void main(String[] args) {
