@@ -12,7 +12,7 @@ public class Quiz01 {
 
         for (int i = 0; i < n; i++) {
             String name = sc.next();
-            
+
             if (i == n - 1) {
                 System.out.print(name + ".");
             } else {
