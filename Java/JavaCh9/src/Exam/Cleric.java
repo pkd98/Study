@@ -17,7 +17,7 @@ public class Cleric {
     }
     
     public Cleric(String name, int HP){
-        this(name, HP, HP);
+        this(name, HP, MAX_MP);
     }
     
     public Cleric(String name){
