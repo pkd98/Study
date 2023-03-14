@@ -2,21 +2,29 @@ package Exam;
 
 public class Wand {
     private String name; // 지팡이 이름
-    double power; // 지팡이 마력
-    
+    private double power; // 지팡이 마력
+
     public double getPower() {
         return power;
     }
-    
+
     public String getName() {
         return name;
     }
-    
+
     public void setName(String name) {
-        this.name = name;
+        if (name == null) {
+            throw new IllegalArgumentException("이름은 null 불가능");
+        } else {
+            this.name = name;
+        }
     }
-    
+
     public void setPower(double power) {
-        this.power = power;
+        if (0.5 <= power && power <= 100.0) {
+            this.power = power;
+        } else {
+            throw new IllegalArgumentException("마력은 0.5 이상 100.0 이하만 가능");
+        }
     }
 }
