@@ -10,7 +10,6 @@ import java.util.Scanner;
  * 해당 각 그늘이 독서에 적합한지 여부 구해라! (x - a)^2 + (y - b)^2 >= R^2
  */
 
-
 public class Assignment1 {
     
     public static String determine(int a, int b, int x, int y, int R) {
